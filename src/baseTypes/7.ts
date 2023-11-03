@@ -15,11 +15,7 @@ enum Days {
 let myFunc: (arg: string) => boolean;
 
 myFunc = (arg) => {
-  if (arg === "sunday" || arg === "saturday") {
-    return false;
-  } else {
-    return true;
-  }
+  return arg === Days.sunday || arg === Days.saturday;
 };
 
 myFunc(Days.monday);
